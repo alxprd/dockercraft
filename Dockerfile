@@ -7,7 +7,7 @@ RUN wget -qO- https://download.docker.com/linux/static/stable/x86_64/docker-${DO
   tar -xvz --strip-components=1 -C /bin
 
 FROM wget AS cuberite
-ARG CUBERITE_BUILD=905
+ARG CUBERITE_BUILD=1281
 WORKDIR /srv
 RUN wget -qO- "https://builds.cuberite.org/job/Cuberite Linux x64 Master/${CUBERITE_BUILD}/artifact/Cuberite.tar.gz" |\
   tar -xzf -
